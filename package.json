@@ -1,0 +1,15 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "this is node ",
+  "main": "first-app.js",
+  "scripts": {
+    "test": "mocha" , 
+"start" : "node first-app.js"
+  },
+  "author": "Faizan Khan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,47 @@
+
+body{
+  padding: 0 ; 
+  margin: 0 ; 
+}
+.title1{
+  padding: 100px ;
+   margin: 0 ; 
+   background-color: yellow ;
+   color: white ; 
+   display: flex;
+   justify-content: center;
+   font-size: 32px ;
+}
+.textField1{
+   border: solid 1px black ; 
+   border-radius: 10px ; 
+   margin-right: 16px ; 
+
+}
+
+.b1{
+  border: solid 2px blue ; 
+  border-radius: 10px ; 
+  background-color: white ; 
+  color: blue ; 
+  padding: 8px ;
+
+   
+}
+
+.b1:hover{
+  transition-duration: 0.3s; 
+  background-color: blue ; 
+  color: white ; 
+  
+
+   
+}
+
+.formBody{
+  padding : 32px ; 
+
+display : flex ; 
+justify-content: center;
+
+}
