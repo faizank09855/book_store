@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding : 0 ;
+}
+
+.headerText{
+
+    display: flex;
+    justify-content: center;
+}
+
+.user-form{
+    border-radius: 20px;
+    padding: 32px;
+    margin: 0;
+    background-color: yellow;
+    align-content: center;
+display: inline-flex;
+flex-direction: column;
+justify-content: space-around;
+
+}
+
+.textField{
+    width: 260px;
+padding: 6px;
+margin:  10px 0 16px;
+border: solid 1px #3d3d3d;
+border-radius: 10px;
+}
+
+.form-align{
+    display: flex;
+    justify-content: center;
+
+    align-self: center;
+align-items: center;
+
+    
+}
+
+.submitButton{
+width: 260px;
+    padding: 6px;
+    margin:  24px 0 16px;
+    border: solid 1px #3d3d3d;
+    border-radius: 10px; 
+}
+
+
