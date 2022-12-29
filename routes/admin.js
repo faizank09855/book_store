@@ -5,4 +5,4 @@ routes.get('/' , (req , res)=>{
 res.sendFile(path.join(__dirname , '..' , 'view' , 'admin-page.html')); 
 });
 
-exports.Router = routes ; 
+exports.Router = routes ;
