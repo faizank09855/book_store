@@ -4,12 +4,13 @@
   "description": "this is node ",
   "main": "first-app.js",
   "scripts": {
-    "test": "mocha" , 
-"start" : "node first-app.js"
+    "test": "mocha",
+    "start": "node first-app.js"
   },
   "author": "Faizan Khan",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.8",
     "express": "^4.18.2"
   }
 }

@@ -1,23 +1,26 @@
 <html>
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width , initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie-edge">
-      <title>admin 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+    <title>
+        <%=userName %>
+    </title>
     <link rel="stylesheet" href="/user-style.css" >
     </head>
     <body>
-        
+
     <div class="headerText"><h1 style="color: white;">
-        User Page
+        <%=pageTitle %>
         </h1> </div>   
   <div class ="form-align">
     <form class="user-form">
-        Book Name
+        <%=bookName %>
     <input class="textField" type="text" name="Book Name"></input>
-    category
+    <%=category %>
     <input class="textField" type="text" name="category"></input>
-    artist
+    <%=artist %>
     <input class="textField" type = "text" name="artist"></input>
     <button class="submitButton" type="submit">Submit</button>
        </form>
