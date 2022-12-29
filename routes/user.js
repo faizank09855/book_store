@@ -1,12 +1,5 @@
 const express = require('express'); 
-const path = require('path') ;
+const userController = require('../controller/user_controller') ;
 const routes = express.Router();
- 
-
-routes.get('/user' , (req , res)=>{
-
-res.sendFile(path.join(__dirname , ".." , "view" , "user-page.html")); 
-
-});
-
+routes.get('/user' , userController.controller);
 exports.Router = routes ; 
