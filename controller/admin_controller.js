@@ -5,6 +5,8 @@ exports.adminController = (req , res)=>{
 
     res.render('admin-page' ,
      {title : 'Admin Page' ,
-     isActive : true}) ; 
+     isAdmin : true ,
+    isUser : false ,
+    }) ; 
     
 }

@@ -4,11 +4,7 @@
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
 
-    <div class="navbar">  
-      <a class= <%= isActive ? "navbar_button" : "navbar_button_active" %> href="/">home</a>
-      <a class=<%= isActive ?  "navbar_button_active" : "navbar_button" %> href="/user">add book</a>
-      
-              </div>
+    <%- include('nav_bar') %>
     <link rel="stylesheet" href="/user-style.css" >
     </head>
     <body>
