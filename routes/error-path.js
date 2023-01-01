@@ -2,10 +2,8 @@ const express = require('express');
 const path = require('path'); 
 const routes = express.Router();
 
-routes.get((req , res)=>{
-
-res.sendFile(path.join(__dirname , '..' , 'view' , 'error-page.html')); 
-
+routes.use((req , res)=>{
+res.render('error-page' , {title : "Error 404"});
 });
 
 exports.Router = routes ; 
