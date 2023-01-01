@@ -7,11 +7,13 @@
     </head>
     <body>
       <%- include('nav_bar') %>
-   
-        <form class="formBody" action="/user">
-            
-<input class="textField1" type="textField"> </input>
-<input class = "b1" type="submit"></input>
+   <% for(let products of fetchData){
+    %>
+    <div>
+        Data
+    </div>
+
+   <% }%>
 </form>
     </body>
 </html>
