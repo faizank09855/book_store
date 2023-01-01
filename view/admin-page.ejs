@@ -6,8 +6,12 @@
     </title>
     </head>
     <body>
-    <h1 class=title1>Enter Route</h1>
+        <div class="navbar">  
+<a class= <%= isActive ? "navbar_button_active" : "navbar_button" %> href="/">home</a>
+<a class=<%= isActive ? "navbar_button"  :"navbar_button_active"  %> href="/user">add book</a>
 
+        </div>
+   
         <form class="formBody" action="/user">
             
 <input class="textField1" type="textField"> </input>

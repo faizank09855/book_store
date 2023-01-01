@@ -46,3 +46,26 @@ display : flex ;
 justify-content: center;
 
 }
+
+.navbar{
+  padding: 32px ;
+  margin: 0 ; 
+  background-color: yellow ;
+  color: white ; 
+  display: flex;
+  justify-content: start;
+  font-size: 32px ;
+
+}
+
+.navbar_button{
+  padding-right: 24px;
+  text-decoration: none;
+
+  
+}
+.navbar_button_active{
+  text-decoration: none;
+  padding-right: 24px;
+  color: red;
+}

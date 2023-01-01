@@ -54,4 +54,25 @@ width: 260px;
     border-radius: 10px; 
 }
 
+.navbar{
+    padding: 32px ;
+    margin: 0 ; 
+    background-color: yellow ;
+    color: white ; 
+    display: flex;
+    justify-content: start;
+    font-size: 32px ;
+  
+  }
+.navbar_button{
+    padding-right: 24px;
+    text-decoration: none;
+    
+}
+
+.navbar_button_active{
+    padding-right: 24px;
+    color: red;
+    text-decoration: none;
+}
 

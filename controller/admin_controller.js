@@ -3,6 +3,8 @@ const path = require('path');
 
 exports.adminController = (req , res)=>{
 
-    res.render('admin-page' , {title : 'Admin Page'}) ; 
+    res.render('admin-page' ,
+     {title : 'Admin Page' ,
+     isActive : true}) ; 
     
 }

@@ -6,6 +6,7 @@ exports.controller = (req , res) => {
 
     res.render('user-page' , {
 userName : "faizan" , 
+isActive : true , 
 pageTitle : "User Page" , 
 bookName : "Book Name" ,
 category : "Category" ,
