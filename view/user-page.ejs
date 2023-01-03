@@ -13,13 +13,14 @@
         <%=pageTitle %>
         </h1> </div>   
   <div class ="form-align">
-    <form class="user-form" action="/" method="post">
+    <!-- class="user-form" -->
+    <form  action="/add" method="POST">
         <%=bookName %>
-    <input class="textField" type="text" name="name" id="name"></input>
+    <input type="text" name="name" class="textFiled" id="name">
     <%=category %>
-    <input class="textField" type="text" name="category"></input>
+    <input class="text" type="text" name="category">
     <%=artist %>
-    <input class="textField" type = "text" name="artist"></input>
+    <input class="text" type = "text" name="artist">
     <button class="submitButton" type="submit">Submit</button>
        </form>
     

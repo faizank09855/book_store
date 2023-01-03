@@ -13,8 +13,10 @@ exports.adminController = (req , res)=>{
     
 }
 
-exports.adminFetchData = (req , res , next)=>{
-    const product = new Product("faizan");
+exports.adminFetchData = (req , res)=>{
+    
+    const product = new Product(req.body.name);
+    
     product.save(); 
     const fetchData = Product.fetchAll(); 
     res.render('admin-page' ,
