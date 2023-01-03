@@ -5,7 +5,7 @@
   "main": "first-app.js",
   "scripts": {
     "test": "mocha",
-    "start": "node first-app.js"
+    "start": "node index.js"
   },
   "author": "Faizan Khan",
   "license": "ISC",
