@@ -1,70 +1,71 @@
-
-body{
-  padding: 0 ; 
-  margin: 0 ; 
+body {
+  padding: 0;
+  margin: 0;
 }
 
-.title1{
-  padding: 100px ;
-   margin: 0 ; 
-   background-color: yellow ;
-   color: white ; 
-   display: flex;
-   justify-content: center;
-   font-size: 32px ;
-}
-.textField1{
-   border: solid 1px black ; 
-   border-radius: 10px ; 
-   margin-right: 16px ; 
-
+.title1 {
+  padding: 100px;
+  margin: 0;
+  background-color: yellow;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
 }
 
-.b1{
-  border: solid 2px blue ; 
-  border-radius: 10px ; 
-  background-color: white ; 
-  color: blue ; 
-  padding: 8px ;
-
-   
-}
-
-.b1:hover{
-  transition-duration: 0.3s; 
-  background-color: blue ; 
-  color: white ; 
-  
-
-   
-}
-
-.formBody{
-  padding : 32px ; 
-
-display : flex ; 
-justify-content: center;
+.textField1 {
+  border: solid 1px black;
+  border-radius: 10px;
+  margin-right: 16px;
 
 }
 
-.navbar{
-  padding: 32px ;
-  margin: 0 ; 
-  background-color: yellow ;
-  color: white ; 
+.b1 {
+  border: solid 2px blue;
+  border-radius: 10px;
+  background-color: white;
+  color: blue;
+  padding: 8px;
+
+
+}
+
+.b1:hover {
+  transition-duration: 0.3s;
+  background-color: blue;
+  color: white;
+
+
+
+}
+
+.formBody {
+  padding: 32px;
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.navbar {
+  padding: 32px;
+  margin: 0;
+  background-color: yellow;
+  color: white;
   display: flex;
   justify-content: start;
-  font-size: 32px ;
+  font-size: 32px;
 
 }
 
-.navbar_button{
+.navbar_button {
   padding-right: 24px;
   text-decoration: none;
 
-  
+
 }
-.navbar_button_active{
+
+.navbar_button_active {
   text-decoration: none;
   padding-right: 24px;
   color: red;
