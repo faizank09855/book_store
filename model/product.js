@@ -25,5 +25,4 @@ module.exports = class Product {
         })
         .catch(err => console.log("database error => " + err));
     }
-
 }
