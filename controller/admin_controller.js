@@ -10,7 +10,6 @@ exports.adminController = (req, res) => {
             isAdmin: true,
             isUser: false,
         });
-
 }
 
 exports.adminFetchData = (req, res) => {
