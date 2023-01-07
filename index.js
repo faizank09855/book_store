@@ -8,10 +8,6 @@ const db = require('./utils/database');
 let app = express();
 
 
-db.execute('SELECT * FROM student')
-    .then(result => console.log(result[0]))
-    .catch(err => console.log("database error => " + err));
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.set('view engine', 'ejs');
 app.set('views', 'view');
