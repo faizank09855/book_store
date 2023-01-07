@@ -26,6 +26,5 @@ exports.adminFetchData = (req, res) => {
     product.save();
     const fetchData = Product.fetchAll(res);
     
-   
 
 }

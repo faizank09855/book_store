@@ -6,13 +6,16 @@
     </title>
     </head>
     <body>
-      <%- include('nav_bar') %>
-   <% for(let products of fetchData){
-    %>
-    <div>
-        <%= products.student_name %>
-    </div>
-   <% }%>
-</form>
+  <%- include('nav_bar') %>
+  
+<div class="GridViewBuilder">
+  <% for(let products of fetchData){
+   %>
+   <div>
+     <%- include('card' , {products : products}) %>
+      
+   </div>
+  <% }%>
+</div>
     </body>
 </html>

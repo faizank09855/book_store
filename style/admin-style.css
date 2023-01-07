@@ -41,7 +41,6 @@ body {
 
 .formBody {
   padding: 32px;
-
   display: flex;
   justify-content: center;
 
@@ -69,4 +68,28 @@ body {
   text-decoration: none;
   padding-right: 24px;
   color: red;
+}
+
+.GridViewBuilder{
+
+display: grid;
+grid-template-columns: auto auto auto;
+
+
+}
+
+.gridItem{
+
+  display: grid;
+  justify-content: center;
+  margin: 20px 40px;
+  background-color: rgba(255, 255, 0, 0.612);
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.gridTitle{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }
