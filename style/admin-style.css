@@ -17,7 +17,6 @@ body {
   border: solid 1px black;
   border-radius: 10px;
   margin-right: 16px;
-
 }
 
 .b1 {
@@ -26,24 +25,18 @@ body {
   background-color: white;
   color: blue;
   padding: 8px;
-
-
 }
 
 .b1:hover {
   transition-duration: 0.3s;
   background-color: blue;
   color: white;
-
-
-
 }
 
 .formBody {
   padding: 32px;
   display: flex;
   justify-content: center;
-
 }
 
 .navbar {
@@ -60,8 +53,6 @@ body {
 .navbar_button {
   padding-right: 24px;
   text-decoration: none;
-
-
 }
 
 .navbar_button_active {
@@ -70,16 +61,12 @@ body {
   color: red;
 }
 
-.GridViewBuilder{
-
-display: grid;
-grid-template-columns: auto auto auto;
-
-
+.GridViewBuilder {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
-.gridItem{
-
+.gridItem {
   display: grid;
   justify-content: center;
   margin: 20px 40px;
@@ -88,7 +75,7 @@ grid-template-columns: auto auto auto;
   border: 1px solid black;
 }
 
-.gridTitle{
+.gridTitle {
   display: flex;
   justify-content: center;
   padding-top: 20px;
