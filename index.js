@@ -4,7 +4,7 @@ const adminRoutes = require('./routes/admin');
 const userRoutes = require('./routes/user');
 const errorRoutes = require('./routes/error-path');
 const bodyParser = require('body-parser');
-const db = require('./utils/database');
+const sequelize = require('./utils/database');
 let app = express();
 
 
@@ -15,5 +15,12 @@ app.use(express.static(path.join(__dirname, "style")))
 app.use(adminRoutes.Router)
 app.use(userRoutes.Router);
 app.use(errorRoutes.Router);
-app.listen(8080);
+sequelize.sync()
+    .then(result => {
+        app.listen(8080);
+    })
+    .catch(err => {
+        console.log(err);
+    });
+
 
