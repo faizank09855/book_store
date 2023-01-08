@@ -43,20 +43,22 @@ exports.adminFetchData = (req, res) => {
         imageUrl : imageUrl
 
     
-    }).then(result =>{console.log(result);}).catch(err=>{
+    }).then(result1 =>{
+        Product.findAll().then(result =>{
+            res.render('admin-page',
+                    {
+                        title: 'Admin Page',
+                        fetchData: result ?? [],
+                        isAdmin: true,
+                        isUser: false,
+                    });    
+        }).catch(err =>{console.log(err);});
+    }).catch(err=>{
         console.log(err);
     }) ; 
      
 
-Product.findAll().then(result =>{
-    res.render('admin-page',
-            {
-                title: 'Admin Page',
-                fetchData: result ?? [],
-                isAdmin: true,
-                isUser: false,
-            });    
-}).catch(err =>{console.log(err);});
+
     // const product = new Product(req.body.name);
 
     // product.save();
