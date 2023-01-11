@@ -3,7 +3,6 @@ const path = require('path');
 
 exports.controller = (req, res) => {
 
-
     res.render('user-page', {
         userName: "faizan",
         isAdmin: false,
@@ -16,5 +15,4 @@ exports.controller = (req, res) => {
 
     });
     // res.sendFile(path.join(__dirname , ".." , "view" , "user-page.html")); 
-
 }
