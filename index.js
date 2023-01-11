@@ -7,7 +7,6 @@ const bodyParser = require('body-parser');
 const sequelize = require('./utils/database');
 let app = express();
 
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.set('view engine', 'ejs');
 app.set('views', 'view');
@@ -22,5 +21,3 @@ sequelize.sync()
     .catch(err => {
         console.log(err);
     });
-
-
