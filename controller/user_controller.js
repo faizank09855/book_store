@@ -11,7 +11,6 @@ exports.controller = (req, res) => {
         bookName: "Book Name",
         category: "Category",
         artist: "Artist",
-
     });
     // res.sendFile(path.join(__dirname , ".." , "view" , "user-page.html")); 
 }
