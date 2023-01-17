@@ -12,5 +12,4 @@ module.exports = sequelize ;
 //         password: '1234',
 //     }
 // );
-
 // module.exports = pool.promise(); 
