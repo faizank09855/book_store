@@ -1,5 +1,4 @@
 const Sequelized = require('sequelize');
-
 const sequelize = new Sequelized('universal', 'root', '1234', 
 {
  dialect: 'mysql',
