@@ -4,4 +4,5 @@ const routes = express.Router();
 
 routes.get('/user', userController.controller);
 
+
 exports.Router = routes; 
