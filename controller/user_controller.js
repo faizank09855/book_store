@@ -8,9 +8,10 @@ exports.controller = (req, res) => {
         isAdmin: false,
         isUser: true,
         pageTitle: "User Page",
+        price : "Price" , 
+        description : "description" , 
         bookName: "Book Name",
         category: "Category",
         artist: "Artist",
     });
-    // res.sendFile(path.join(__dirname , ".." , "view" , "user-page.html")); 
 }

@@ -1,19 +1,27 @@
-const Sequelized = require('sequelize');
-const sequelize = new Sequelized('universal', 'root', '1234', 
-{
- dialect: 'mysql',
- host: 'localhost',
- },
-);
+const mongodb = require('mongodb');
 
-module.exports = sequelize ; 
-// const mysql = require('mysql2');
-// const pool = mysql.createPool(
-//     {
-//         host: 'localhost',
-//         user: 'root',
-//         database: 'universal',
-//         password: '1234',
-//     }
-// );
-// module.exports = pool.promise(); 
+const client = mongodb.MongoClient;
+
+
+let database;
+
+const getConnection = callback => {
+    client.connect('mongodb+srv://fk09855:icmYP6SAXoh98kT8@cluster0.jfkfi0c.mongodb.net/')
+    .then(result => {
+        console.log('connect');
+        database = result.db(); 
+        callback();
+    }).catch(err => {
+        console.log(err);
+    });
+}
+
+const getdb = () => {
+    if (database) {
+        return database;
+    }
+    throw 'No DataBase';
+
+}
+exports.connectMongo = getConnection ; 
+exports.getDabase = getdb; 

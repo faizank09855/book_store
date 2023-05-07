@@ -1,54 +1,41 @@
 const Sequelize = require('sequelize');
 const db = require('../utils/database');
-const sequelize = require('../utils/database');
-const Products = sequelize.define('product' , {
-id : {
-    type: Sequelize.INTEGER , 
-    autoIncrement : true ,
-    allowNull : true , 
-    primaryKey : true 
+const database = require('../utils/database').getDabase;
 
-} ,
-title : Sequelize.STRING , 
-price : {
-    type : Sequelize.DOUBLE ,
-    allowNull : false
-} ,
-imageUrl : {
-    type : Sequelize.STRING ,
-    allowNull : true 
-} ,
-desciption : {
-    type : Sequelize.STRING , 
-    allowNull : false 
+
+exports.Products = class Product {
+    constructor(title, price, imageUrl, description) {
+        this.title = title;
+        this.price = price;
+        this.imageUrl = imageUrl;
+        this.description = description;
+    }
+
+    getProducts() {
+        const query = database();
+
+let data ; 
+
+       return query.collection('products').find({}).toArray().then(result =>{
+            console.log('result3');
+            console.log(result) ; 
+            return result ; 
+        }).catch(err=>{
+
+            return data ; 
+        });
+
+
+
+
+    }
+
+
+    addProduct() {
+        const query = database();
+      return  query.collection('products').insertOne(this).then(result => {
+            console.log(result);
+
+        });
+    }
 }
-
-});
-
-module.exports = Products ; 
-
-// module.exports = class Product {
-
-//     constructor(title) {
-//         this.title = title;
-//     }
-
-//     save() {
-//         db.execute('INSERT INTO student ( student_name , student_class ) VALUES (? , ? )', [this.title, "12"])
-//             .then(() => { console.log("data inserted Successful"); })
-//     }
-
-//     static fetchAll(res) {
-//         db.execute('SELECT * FROM student')
-//         .then((result) =>{
-//             res.render('admin-page',
-//             {
-//                 title: 'Admin Page',
-//                 fetchData: result[0] ?? [],
-//                 isAdmin: true,
-//                 isUser: false,
-//             });    
-//         })
-//         .catch(err => console.log("database error => " + err));
-//     }
-// }
