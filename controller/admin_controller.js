@@ -66,6 +66,4 @@ exports.adminFetchData = (req, res) => {
 
 
 
-    
-
 }
