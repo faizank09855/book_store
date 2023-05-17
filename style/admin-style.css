@@ -75,13 +75,19 @@ body {
   box-shadow: black 1px 1px 10px 1px;
 }
 
-.gridItem:hover{
+.gridItem:hover {
   box-shadow: black 1px 1px 16px 1px;
 }
-
 
 .gridTitle {
   display: flex;
   justify-content: center;
   padding-top: 20px;
+}
+
+.img {
+ height: 100%;
+ width: 100% ; 
+ border-radius: 8px;
+
 }

@@ -1,6 +1,12 @@
 <div class="gridItem">
-    <img height="240px" , src=<%=products.imageUrl %>>
-    <div class="gridTitle">
-        <%=products.title %>
-    </div>
+    <form action=<%="/get_product_details?id=" + products._id %>>
+        <img height="240px" , src=<%=products.imageUrl %>
+        <input type="text" name="id" value=<%=products._id %>>
+        <div class="gridTitle">
+            <%=products.title %>
+        </div>
+     
+     <!-- <input type="submit" > -->
+        <a href=<%="/get_product_details?id=" + products._id %>  name="id"> See More Details </a>
+    </form>
 </div>

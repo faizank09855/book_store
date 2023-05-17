@@ -6,7 +6,7 @@ const client = mongodb.MongoClient;
 let database;
 
 const getConnection = callback => {
-    client.connect('mongodb+srv://fk09855:icmYP6SAXoh98kT8@cluster0.jfkfi0c.mongodb.net/')
+    client.connect('mongodb+srv://fk09855:Fk123456@cluster0.jfkfi0c.mongodb.net/')
     .then(result => {
         console.log('connect');
         database = result.db(); 

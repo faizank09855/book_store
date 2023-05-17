@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/product-details-style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <div class="centerCard">
+        <div class="column">
+            <div class="editRow">
+                <div class="deleteIcon">
+                    <i class='fas fa-trash' style='font-size:24px'></i>
+                </div>
+                <a href=<%="/get_edit_details?id=" + productData._id %>>
+                    <div class="editIcon">
+                        <i class='fas fa-edit' style='font-size:24px'></i>
+                    </div>
+                </a>
+            </div>
+            <img class="image" src=<%=productData.imageUrl %> >
+            <hr class="solid">
+            <div class="row">
+                <h1 class="title">
+                    <%=productData.title %>
+                </h1>
+                <h1 class="title">
+                    $<%=productData.price %>
+                </h1>
+
+            </div>
+        </div>
+    </div>
+    <div class="centerCard">
+        <div class="column" style="width: 430px;">
+            <h1 style="padding: 16px;  text-align: start; ">
+                <%=productData.description %>
+            </h1>
+        </div>
+    </div>
+</body>
+
+</html>

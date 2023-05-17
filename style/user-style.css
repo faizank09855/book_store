@@ -14,18 +14,15 @@ body {
     border-radius: 20px;
     padding: 32px;
     margin: 0;
-
     box-shadow: 0 0 5px 0;
     background: inherit;
     backdrop-filter: blur(10px);
     background-color: yellow;
     background-image: linear-gradient(to top, yellow, orange);
-
     align-content: center;
     display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
-
 }
 
 .textField {

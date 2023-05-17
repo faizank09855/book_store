@@ -10,14 +10,15 @@ const sequelize = require('./utils/database');
 let app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.set('view engine', 'ejs');
 app.set('views', 'view');
 app.use(express.static(path.join(__dirname, "style")))
 
 
-database(()=>{
+database(() => {
     app.use(adminRoutes.Router)
-app.use(userRoutes.Router);
-app.use(errorRoutes.Router);
+    app.use(userRoutes.Router);
+    app.use(errorRoutes.Router);
     app.listen(8080);
 });

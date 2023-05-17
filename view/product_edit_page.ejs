@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>
+        Edit Product
+    </title>
+    <link rel="stylesheet" type="text/css" href="/product-details-style.css">
+</head>
+
+<body>
+    <div class="centerCardEdit">
+
+        <form method="post"  action=<%="/edit_product?id=" + product._id  %>  >
+
+            <div class="columnEdit">
+                <div class="rowEdit">
+                    <h3>Name </h3>
+                    <input name="title" type="text" placeholder="<%=product.title %>"  >
+                </div>
+
+                <div class="rowEdit">
+                    <h3>Price</h3>
+                    <input name="price" type="text" placeholder="<%=product.price %>" value=<%=product.price %>>
+                </div>
+
+                <div class="rowEdit">
+                    <h3>Image Url</h3>
+                    <input name="imageUrl" type="text" placeholder="<%=product.imageUrl %>" value=<%=product.imageUrl
+                        %>>
+                </div>
+
+                <div class="rowEdit">
+                    <h3>Description</h3>
+                    <input name="description" type="text" placeholder="<%=product.description %>"
+                        value=<%=product.description %>>
+                </div>
+
+
+                <div class="rowEdit">
+                    <input type="reset" class="resetButton">
+                    <input type="submit" class="submitButton">
+                </div>
+
+            </div>
+
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
